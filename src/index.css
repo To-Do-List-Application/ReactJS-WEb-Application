@@ -1,0 +1,221 @@
+body {
+    /*no margin*/
+    margin: 0;
+    /*add a font family*/
+    font-family: -apple-system,
+    /*font*/
+    BlinkMacSystemFont,
+    /*ui*/
+    'Segoe UI',
+    /*roboto*/
+    'Roboto',
+    /*oxgen*/
+    'Oxygen',
+    /*ubuntu*/
+    'Ubuntu',
+    /*cantell*/
+    'Cantarell',
+    /*sans*/
+    'Fira Sans',
+    /*sans*/
+    'Droid Sans',
+    /*neue*/
+    'Helvetica Neue',
+    /*serif*/
+     'sans-serif';
+    /*antiall*/
+    -webkit-font-smoothing: antialiased;
+    /*smoothing*/
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.addItemTask-wrapper .form {
+    /*width*/
+    max-width: 400px;
+}
+
+.itemTaskList {
+    /*padding*/
+    padding: 15px;
+    /*margin*/
+    margin: 10px 0 0;
+}
+
+.itemTaskList .notDiv {
+    /*height*/
+    height: 280px;
+    /*overflow*/
+    overflow-y: auto;
+}
+
+.itemTaskList.com {
+    min-height: 280px;
+    overflow-y: auto;
+}
+
+.itemTaskList li {
+    list-style: none;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #d3d1d0;
+    margin-bottom: 4px;
+    height: 40px;
+    vertical-align: middle;
+    position: relative;
+}
+
+span.item-tools {
+    /*position*/
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+.item-tools .icon:hover {
+    opacity: 0.6;
+}
+
+.item-tools .icon {
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.item-header-wrapper {
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px 30px;
+    border-radius: 12px;
+}
+
+.item-header-wrapper h1 {
+    margin: 0;
+}
+
+.item-header-wrapper p {
+    padding: 0 40px;
+}
+
+
+.itemtaskList-wrapper {
+    padding: 20px 20px;
+}
+
+.subitemNew {
+    font-weight: bold !important;
+    background-color: #007aff !important;
+    color: #fff !important;
+    border-color: #007aff !important;
+    padding: 6px 20px !important;
+    transition: all 0.4s ease-in-out !important;
+}
+
+.subitemNew:hover {
+    opacity: 0.9;
+    transition: all 0.4s ease-in-out;
+}
+
+.itemtaskInput {
+    border-radius: 4px;
+    border: 1px solid #007aff;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.inputitemSpan p {
+    margin: 0;
+    line-height: 26px;
+}
+
+.inputitemSpan {
+    display: block;
+}
+
+.inputitemSpan input {
+    width: 70%;
+}
+
+.completeditem.disabled:hover {
+    opacity: 1;
+    cursor: context-menu;
+}
+
+button.disabled,
+.completeditem.disabled {
+    cursor: context-menu;
+}
+
+.completeditem.disabled {
+    display: none;
+}
+
+.icon.edit.disabled {
+    display: none;
+}
+
+.icon.edit.disabled:hover {
+    opacity: 0.5;
+    cursor: context-menu;
+}
+
+.notDiv {
+    background: url(/images/paper.svg) rgba(255, 255, 255, 0.6) no-repeat center center;
+    background-size: contain;
+    height: 280px;
+    border-radius: 12px;
+    margin-top: auto;
+    overflow-y: auto;
+}
+
+.completeDiv {
+    background: url(/images/complete.svg) rgba(255, 255, 255, 0.6) no-repeat center center;
+    background-size: contain;
+    height: 260px;
+    border-radius: 12px;
+}
+
+.addItem-inside {
+    background: rgba(0, 0, 0, 0.4);
+    height: 280px;
+    border-radius: 12px;
+    padding: 60px 50px 40px;
+}
+
+@media screen and (max-width: 1320px) {
+    .inputitemSpan input {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .item-header-wrapper p {
+        padding: 0 20px;
+    }
+
+    .item-header-wrapper {
+        padding: 20px 10px 20px;
+    }
+
+    .addItem-inside {
+        padding: 50px 20px 30px;
+        height: 200px;
+    }
+
+    .itemtaskList-wrapper {
+        padding: 30px 0 0;
+    }
+
+    /*.addItemTask-wrapper {*/
+    /*    padding: 40px 0 0;*/
+    /*}*/
+
+    .item-header-wrapper h1 {
+        font-size: 30px;
+    }
+
+    .Itembottom-wrapper h5 {
+        font-size: 16px;
+        color: black;
+    }
+}
